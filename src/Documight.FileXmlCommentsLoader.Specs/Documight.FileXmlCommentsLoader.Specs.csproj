@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Machine.Specifications">
+      <HintPath>..\..\lib\mspec\Machine.Specifications.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileXmlCommentsLoaderSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Documight.Domain\Documight.Domain.csproj">
+      <Project>{F507C52F-5DED-4C6E-8D1A-4335BE119DDC}</Project>
+      <Name>Documight.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Documight.FileXmlCommentsLoader\Documight.FileXmlCommentsLoader.csproj">
+      <Project>{CB1C8EA1-4C20-4F33-893A-3DB5AD4EE442}</Project>
+      <Name>Documight.FileXmlCommentsLoader</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
