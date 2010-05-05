@@ -19,17 +19,17 @@ namespace Documight.FileAssemblyLoader.Specs
         protected static Assembly[] assemblies;
 
         Because of = () =>
-            assemblies = loader.LoadAssembliesFrom(Environment.CurrentDirectory);
+            assemblies = loader.LoadAssembliesFrom(Environment.CurrentDirectory + @"\Fixtures\");
 
         It returns_all_assemblies_in_the_directory = () =>
-            assemblies.Length.ShouldEqual(4);
+            assemblies.Length.ShouldEqual(1);
     }
 
     public class When_loading_from_a_valid_path_without_assemblies : FileAssemblyLoaderSpecs
     {
         static Assembly[] assemblies;
 
-        Because of = () => 
+        Because of = () =>
            assemblies = loader.LoadAssembliesFrom(Environment.CurrentDirectory + @"\..\");
 
         It does_not_load_any_assemblies = () =>
