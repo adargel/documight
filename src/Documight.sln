@@ -25,6 +25,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documight.FileXmlCommentsLo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documight.FileXmlCommentsLoader.Specs", "Documight.FileXmlCommentsLoader.Specs\Documight.FileXmlCommentsLoader.Specs.csproj", "{C41D140E-F32E-42B7-9D83-FC867AB1BBCF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DocumentationWriters", "DocumentationWriters", "{98CD1109-874D-40AD-9446-670A33F92BCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documight.HtmlDocumentationWriter", "Documight.HtmlDocumentationWriter\Documight.HtmlDocumentationWriter.csproj", "{5F302FC7-4439-4249-995D-70BB79905ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documight.HtmlDocumentationWriter.Specs", "Documight.HtmlDocumentationWriter.Specs\Documight.HtmlDocumentationWriter.Specs.csproj", "{B04E7808-D72F-4684-9825-5650D75EA563}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +121,26 @@ Global
 		{C41D140E-F32E-42B7-9D83-FC867AB1BBCF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{C41D140E-F32E-42B7-9D83-FC867AB1BBCF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{C41D140E-F32E-42B7-9D83-FC867AB1BBCF}.Release|x86.ActiveCfg = Release|Any CPU
+		{5F302FC7-4439-4249-995D-70BB79905ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F302FC7-4439-4249-995D-70BB79905ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F302FC7-4439-4249-995D-70BB79905ED0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5F302FC7-4439-4249-995D-70BB79905ED0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5F302FC7-4439-4249-995D-70BB79905ED0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5F302FC7-4439-4249-995D-70BB79905ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F302FC7-4439-4249-995D-70BB79905ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F302FC7-4439-4249-995D-70BB79905ED0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5F302FC7-4439-4249-995D-70BB79905ED0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5F302FC7-4439-4249-995D-70BB79905ED0}.Release|x86.ActiveCfg = Release|Any CPU
+		{B04E7808-D72F-4684-9825-5650D75EA563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B04E7808-D72F-4684-9825-5650D75EA563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B04E7808-D72F-4684-9825-5650D75EA563}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B04E7808-D72F-4684-9825-5650D75EA563}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B04E7808-D72F-4684-9825-5650D75EA563}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B04E7808-D72F-4684-9825-5650D75EA563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B04E7808-D72F-4684-9825-5650D75EA563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B04E7808-D72F-4684-9825-5650D75EA563}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B04E7808-D72F-4684-9825-5650D75EA563}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B04E7808-D72F-4684-9825-5650D75EA563}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -128,5 +154,7 @@ Global
 		{63F6851A-B6AF-44E1-BB1D-6FB0C3DB8463} = {53DF71A2-361B-4660-9D9C-B5A53B82849A}
 		{CB1C8EA1-4C20-4F33-893A-3DB5AD4EE442} = {F100EF64-BF02-4D25-83D7-0E8503173F7C}
 		{C41D140E-F32E-42B7-9D83-FC867AB1BBCF} = {F100EF64-BF02-4D25-83D7-0E8503173F7C}
+		{5F302FC7-4439-4249-995D-70BB79905ED0} = {98CD1109-874D-40AD-9446-670A33F92BCA}
+		{B04E7808-D72F-4684-9825-5650D75EA563} = {98CD1109-874D-40AD-9446-670A33F92BCA}
 	EndGlobalSection
 EndGlobal
