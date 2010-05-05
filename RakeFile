@@ -1,0 +1,21 @@
+require 'albacore'
+
+task :default => ["sources:build", "test:specs"]
+
+namespace :sources do
+  msbuild :build do |msb|
+	  msb.path_to_command.gsub!('v3.5', 'v4.0.30319')
+	  msb.solution = 'src\Documight.sln'
+	  msb.targets :Clean, :Build
+	  msb.properties :configuration => :Debug
+  end
+end
+
+namespace :test do
+  mspec :specs do |mspec|
+    mkdir 'mspec_reports' unless Dir::exists? 'mspec_reports'
+    mspec.path_to_command = 'lib/mspec/mspec.exe'
+	mspec.assemblies 'src/Documight.Domain.Specs/bin/Debug/Documight.Domain.Specs.dll'
+	mspec.html_output = './mspec_reports'
+  end
+end
