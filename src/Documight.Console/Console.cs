@@ -13,7 +13,7 @@ namespace Documight.Console
 
         public void Run(Arguments args=null)
         {
-            args = args ?? new DefaultArguments();
+            args = args ?? new Arguments();
             _documentEngine.Create(args.InputPath, args.OutputPath);
         }
     }

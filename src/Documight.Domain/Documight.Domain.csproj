@@ -42,9 +42,8 @@
   <ItemGroup>
     <Compile Include="Builders\IDocumentModelBuilder.cs" />
     <Compile Include="Documentation.cs" />
-    <Compile Include="DocumentationSettings.cs" />
     <Compile Include="IDocumentation.cs" />
-    <Compile Include="Model\DocumentModel.cs" />
+    <Compile Include="Model\Document.cs" />
     <Compile Include="Model\XmlComments.cs" />
     <Compile Include="Loaders\IAssemblyLoader.cs" />
     <Compile Include="Loaders\ICommentLoader.cs" />

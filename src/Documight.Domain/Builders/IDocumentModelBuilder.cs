@@ -5,6 +5,6 @@ namespace Documight.Domain.Builders
 {
     public interface IDocumentModelBuilder
     {
-        DocumentModel Build(Assembly[] assemblies, XmlComments[] comments);
+        Document Build(Assembly[] assemblies, XmlComments[] comments);
     }
 }

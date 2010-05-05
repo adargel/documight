@@ -16,7 +16,7 @@ namespace Documight.Domain.Specs
         protected static Mock<ICommentLoader> commentLoader;
         protected static Mock<IDocumentWriter> docWriter;
         protected static Mock<IDocumentModelBuilder> docBuilder;
-        protected static DocumentModel model;
+        protected static Document model;
         protected static Assembly[] assemblies;
         protected static XmlComments[] comments;
         protected static string inputPath = "docinput";
@@ -24,7 +24,7 @@ namespace Documight.Domain.Specs
 
         Establish context = () =>
             {
-                model = new DocumentModel();
+                model = new Document();
 
                 assemblyLoader = new Mock<IAssemblyLoader>();
                 assemblyLoader.Setup(a => a.LoadAssembliesFrom(inputPath)).Returns(assemblies);

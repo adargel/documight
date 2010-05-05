@@ -15,7 +15,7 @@ namespace :test do
   mspec :specs do |mspec|
     mkdir 'mspec_reports' unless Dir::exists? 'mspec_reports'
     mspec.path_to_command = 'lib/mspec/mspec.exe'
-	mspec.assemblies 'src/Documight.Domain.Specs/bin/Debug/Documight.Domain.Specs.dll'
+	mspec.assemblies 'src/Documight.Domain.Specs/bin/Debug/Documight.Domain.Specs.dll', 'src/Documight.Console.Specs/bin/Debug/Documight.Console.Specs.dll'
 	mspec.html_output = './mspec_reports'
   end
 end
